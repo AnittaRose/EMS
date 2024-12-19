@@ -1,0 +1,18 @@
+.formbox{
+    width: 80vh;
+}
+.employeebaner{
+    width: 110vh;
+    height: 100vh;
+}
+.form-control{
+    width: 85vh;
+    padding: 10px;
+}
+.btnn{
+    width: 85vh;
+    padding: 10px;
+    background: rgb(235,236,230);
+    border-radius: 8px;
+    border: 1px solid rgb(222,226,230);
+}
