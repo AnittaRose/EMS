@@ -1,0 +1,25 @@
+/* .welcomee{
+    background-image: url(https://files.oaiusercontent.com/file-6s5R58ZAWYPkK8mCqrPckW?se=2024-12-24T06%3A56%3A14Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D1f35333f-e7e5-45a8-a14e-cdd0c646504d.webp&sig=fzGbzFJTUif11HCe1s4J0g375kErXtXQekD5uVdZjsQ%3D);
+    background-repeat: no-repeat;
+    width: 300vh;
+    height: 100vh;
+
+} */
+ .welcomeemployee{
+    background-image: url(https://files.oaiusercontent.com/file-8wm3CTpYNJwLX1WfAZnuE2?se=2025-01-01T08%3A22%3A30Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D256db34f-badb-412a-91a9-bb614420fc4d.webp&sig=KkQSiSAyTyaUwZVBlJ0eBKyu0tzww6bfgbXXWRtEcuU%3D);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+ }
+ .wel{
+    color:#07314D;
+    font-weight: 600;
+    font-size: 100px;
+ }
+.go{
+    background: #07314D;
+    border: 2px solid white;
+    color: white;
+}

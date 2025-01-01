@@ -1,0 +1,17 @@
+.upbttn{
+    background:#D1C4B2;
+    border-radius: 10px;
+    box-shadow: none;
+    border: 2px solid #E2E2D7;
+    width: 50vh;
+    height: 30vh;
+    /* background-image: none; */
+    color: #E2E2D7;
+}
+.slariess{
+    background-image: url(https://files.oaiusercontent.com/file-SctC8qmW1XTpxLVQ32pPkY?se=2024-12-24T06%3A08%3A51Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D785e4867-77f4-4043-a48b-940bf204b407.webp&sig=GLkxHL7UXYeGYe2f06rRYQ4fLabJWmR7lWhhVkRfQz0%3D);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}

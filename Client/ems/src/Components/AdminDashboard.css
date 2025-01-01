@@ -1,7 +1,7 @@
 .box{
     background-color: rgba(0, 0, 0, 0.845);
     width: 50vh;
-    height: 100vh;
+    height: 120vh;
 }
 .box2{
     background-color:white;
@@ -28,7 +28,7 @@
 }
 .box-shadow{
     width: 40vh;
-    height: 15vh;
+    height: 20vh;
     border: 1px solid rgb(163, 163, 163);
 }
 .border12{
@@ -37,7 +37,7 @@
 }
 .mainbox12{
     background-color: rgb(229, 229, 230);
-    height: 90vh;
+    height: 110vh;
 }
 .mainbox123{
     display: grid;
@@ -66,4 +66,25 @@
     padding: 5px;
     width: 10vh;
     font-weight: bold;
+}
+.box-shadow11{
+    height: 50vh;
+    background-color: white;
+    width: 50vh;
+    border-radius: 20px;
+}
+.leave{
+    width: 30vh;
+}
+.leave12{
+    width: 30vh;
+}
+.leave123{
+    width: 30vh;
+}
+.totalemp{
+    width: 50px;
+}
+.sidebar{
+    height: 100vh;
 }

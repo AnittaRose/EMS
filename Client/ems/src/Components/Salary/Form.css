@@ -1,0 +1,61 @@
+.addmain{
+    background-image: url(https://i.pinimg.com/736x/28/b8/bd/28b8bd3523ef4c6f2b10b2165dd41f0c.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+}
+.addinput{
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+    border-left: none;
+    border-right: none;
+}
+.bot{
+    padding-top: 5em;
+}
+.salarybttn{
+    background: transparent;
+    padding: 8px;
+    width: 50vh;
+    border-radius: 10px;
+}
+.card0:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+    transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+  }
+
+  .img-fluid:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+  }
+  .boxx{
+    width: 114vh;
+    /* border:  1px solid gray; */
+    /* border-radius: 10px; */
+    height: 100vh;
+    background-color: #DED8C5;
+  }
+.in{
+    width: 98vh;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #E8E2D0;
+    border: 1px solid gray;
+}
+.but{
+    width: 98vh;
+    padding: 10px;
+    border: 1px solid #B3AFA0;
+    background-color: #B3AFA0;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+}
+.salimg{
+    width: 100vh;
+    height: 100vh;
+}

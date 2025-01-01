@@ -7,15 +7,15 @@ module.exports = {
    
       return models.user_type.insertMany([
         {
-         _id : "67029a691240a5ff40dd0dfe",
-         user_type : "Admin"
-        },
-        {
-          _id : "67029a891240a5ff40dd0e00",
-          user_type : "Employee"
-         }
+          _id : "6766e758203c503ae0b70ce3",
+          user_type : "Admin"
+         },
+         {
+           _id : "6766e292ef0219c8f55991b7",
+           user_type : "Employee"
+          }
       ]).then(res => {
-      // Prints "1"
+
       console.log(res.insertedCount);
     });
   
@@ -26,8 +26,8 @@ module.exports = {
       return models.user_type.deleteMany({
         _id:{
           $in : [
-           "67029a691240a5ff40dd0dfe",
-           "67029a891240a5ff40dd0e00"
+            "6766e27cef0219c8f55991b6",
+           "6766e292ef0219c8f55991b7"
           ]
 
         }

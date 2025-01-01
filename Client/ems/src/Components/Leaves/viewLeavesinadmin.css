@@ -1,0 +1,20 @@
+.main123{
+    background-image: url(https://files.oaiusercontent.com/file-NarYqy3Acme5KYYx7KQGs3?se=2024-12-24T06%3A16%3A49Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D5ed304b4-f3da-4f67-836a-9b1c6378831e.webp&sig=hB2XoBEToq4k/yvybyf5cWVsDrcTBx15ti3KRwNpzGw%3D  );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 214vh;
+    height: 100vh;
+    /* backdrop-filter: blur(60); */
+}
+.card{
+    background-color:#A8A191;
+    border: 2px solid  #C7CBBE;
+}
+.list-group-item{
+    background-color:  #C7CBBE;
+    border: #A8A191;
+}
+.btn{
+    background-color:  #C7CBBE;
+}

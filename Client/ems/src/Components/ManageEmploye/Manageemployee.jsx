@@ -20,8 +20,10 @@ function Manage() {
                     Authorization: `Bearer ${token}`,
                 },
             });
-
+    
             const parsedResponse = await response.json();
+            console.log(parsedResponse);  // Log the response to check the structure
+    
             setEmployees(parsedResponse.data); // Update state with fetched data
         } catch (error) {
             console.error("Error fetching employee list", error);
@@ -56,33 +58,79 @@ function Manage() {
     const handleAddEmployee = () => {
         navigate(`/Addpage?login=${tokenKey}&id=${id}`);
     };
-    
 
-    const handleViewEmployee = (id) => {
-        navigate(`/Single?login=${tokenKey}&id=${id}`);
+    
+    const LeaveForm = (id) => {
+        navigate(`/ViewLeaves?login=${tokenKey}&id=${id}`);
+    };
+
+    const PaySalaries = (id) => {
+        navigate(`/PaySalaries?login=${tokenKey}&id=${id}`);
     };
     
 
-    const Edit =(id) =>{
-        navigate(`/Edit?login=${tokenKey}&id=${id}`)
+    const handleViewEmployee = (id) => {
+        navigate(`/SingleemployeAdmin?login=${tokenKey}&id=${id}`);
+    };
+    
+
+    const Edit =(employeeId) =>{
+        navigate(`/Edit?login=${tokenKey}&id=${id}&employeeId=${employeeId}`)
     }
     return (
-        <div className="d-flex">
-            <div className="sidebar">
-                <div className="main px-5 pt-5">
-                    {/* Sidebar content */}
+
+        <>
+    <div className="d-flex">
+        <div className="">
+            <div className="manback">
+                <div className="px-4 pt-5">
+                <div className="d-flex">
+                            <div><img src="https://img.icons8.com/?size=100&id=47735&format=png&color=FFFFFF" className="dashboardicon" alt="" /></div>
+                            <span className="dashboard px-3 fw-bold">Dashboard</span>
+                        </div>
+                        <div className="d-flex pt-4">
+                            <div><img src="https://img.icons8.com/?size=100&id=bjqhmlJOaXIK&format=png&color=FFFFFF" className="employeicon" alt="" /></div>
+                            <span className="dashboard px-3 fw-bold" onClick={() => Manage(userId)}>Manage Employees</span>
+                        </div>
+                        <div className="d-flex pt-4">
+                            <div><img src="https://img.icons8.com/?size=100&id=t4JOl7HIHU3e&format=png&color=FFFFFF" className="category" alt="" /></div>
+                            <span className="dashboard px-3 fw-bold" onClick={() => Categories(userId)}>Department</span>
+                        </div>
+                        <div className="d-flex pt-4">
+                            <div><img src="https://img.icons8.com/?size=100&id=82751&format=png&color=FFFFFF" alt="" className="profile" /></div>
+                            <span className="dashboard px-3 fw-bold">Profile</span>
+                        </div>
+                        <div className="d-flex pt-4">
+                            <div><img src="https://img.icons8.com/?size=100&id=364&format=png&color=FFFFFF" className="logout" alt="" /></div>
+                            <span className="dashboard px-3 fw-bold">Settings</span>
+                        </div>
+                        <div className="d-flex pt-4">
+                            <div><img src="https://img.icons8.com/?size=100&id=Rqol6NpJIw4s&format=png&color=FFFFFF" className="logout" alt="" /></div>
+                            <span className="dashboard px-3 fw-bold" onClick={() => LeaveForm(userId)}>Leaves</span>
+                        </div>
+                        <div className="d-flex pt-4">
+                            <div><img src="https://img.icons8.com/?size=100&id=22431&format=png&color=FFFFFF" className="logout" alt="" /></div>
+                            <span className="dashboard px-3 fw-bold" onClick={() => PaySalaries(userId)}>Salary</span>
+                        </div>
+                        <div className="d-flex pt-4">
+                            <div><img src="https://img.icons8.com/?size=100&id=22431&format=png&color=FFFFFF" className="logout" alt="" /></div>
+                            <span className="dashboard px-3 fw-bold" onClick={() => MarkAttendanceAdmin()}>Employee Attendance</span>
+                        </div>
+                    
                 </div>
             </div>
+        </div>
 
-            <div className="content">
+        <div className="">
+            <div className="contenttt">
                 <div className="sub">
-                    <div className="text-center fs-2 pt-2 fw-bold">
-                        Employee Management System
+                    <div className="text-center fs-1  fw-bold">
+                        Employee List
                     </div>
                 </div>
-                <div className="text-center pt-3 fw-bold fs-4">Employee List</div>
+                {/* <div className="text-center pt-3 fw-bold fs-4">Employee List</div> */}
                 <div className="p-4">
-                <button className="Addbttn" onClick={handleAddEmployee}>
+                <button className="Addbttnnn" onClick={handleAddEmployee}>
                     Add Employee
                 </button>
                 </div>
@@ -94,26 +142,28 @@ function Manage() {
                                 <th>Email</th>
                                 {/* <th>Department</th> */}
                                 <th>role</th>
-                                <th>JoinDate</th>
+                                {/* <th>JoinDate</th> */}
                                 <th>salary</th>
                                 {/* <th>Actions</th> */}
+                                <th>Total Salary</th>
                             </tr>
                         </thead>
                         <tbody>
                         {employees.map((employee) => (
                         <tr key={employee._id} className="shadow-lg rounded">
-                            <td>{employee.name}</td>
+                            <td>{employee.employeeName}</td>
                             <td>{employee.email}</td>
                             <td>{employee.role}</td>
-                            <td>{employee.joinDate}</td>
+                            {/* <td>{employee.joinDate}</td> */}
                             <td>{employee.salary}</td> {/* Verify if salary is available */}
+                            <td>{employee.totalSalary}</td>
                             <td>
                                 <div className="d-flex justify-content-between">
-                                    <button className="bttn p-2" onClick={() => handleViewEmployee(employee._id)}>
+                                    <button className="viewbttn p-2" onClick={() => handleViewEmployee(employee._id)}>
                                         View
                                     </button>
-                                    <button onClick={() => Edit(employee._id)}>Edit</button>
-                                    <button onClick={() => handleDelete(employee._id)}>Delete</button>
+                                    <button onClick={() => Edit(employee._id)} className="editbttn">Edit</button>
+                                    <button onClick={() => handleDelete(employee._id)} className="deletebttn">Delete</button>
                                 </div>
                             </td>
                         </tr>
@@ -124,6 +174,8 @@ function Manage() {
                 </div>
             </div>
         </div>
+    </div>
+        </>
     );
 }
 

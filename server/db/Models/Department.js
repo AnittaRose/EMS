@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose');
 // import { create } from "./Employe";
 
 const departmentSchema = {
@@ -7,4 +7,5 @@ const departmentSchema = {
     description: String,    // Optional
   };
 const Department = mongoose.model("Department",departmentSchema);
-export default Department;
+
+module.exports = Department;

@@ -1,0 +1,40 @@
+.containerre {
+  background-color: #ffffff;
+  width: 110%;
+  /* max-width: 600px; */
+  height: 100vh;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.headerer{
+  margin-bottom: 20px;
+}
+.headerer img {
+  width: 100px;
+}
+.contentent img {
+  width: 150px;
+  margin: 20px 0;
+}
+.contentent p {
+  color: #333333;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footerrr {
+  margin-top: 20px;
+  color: #999999;
+  font-size: 12px;
+}
+.footerrr .social-icons {
+  margin-top: 10px;
+}
+.footerrr .social-icons i {
+  margin: 0 5px;
+  color: #999999;
+}
+.carddd{
+  width: 100vh;
+}

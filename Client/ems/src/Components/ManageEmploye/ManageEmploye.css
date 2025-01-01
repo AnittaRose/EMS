@@ -4,7 +4,7 @@
     height: 100vh;
 }
 .sub{
-    background-color: rgb(215, 215, 218);
+    /* background-color: rgb(215, 215, 218); */
     width: 168vh;
     height: 10vh;
 }
@@ -34,4 +34,151 @@
 }
 .logoutimg{
     width: 25px;
+}
+.viewbttn{
+    width: 15vh;
+    /* background: transparent; */
+    border: none;
+    border-radius: 15px;
+}
+.editbttn{
+    width: 15vh;
+    /* background: transparent; */
+    border: none;
+    border-radius: 15px;
+}
+.deletebttn{
+    width: 15vh;
+    /* background: transparent; */
+    border: none;
+    border-radius: 15px;
+}
+/* .image{
+    background-image: url(https://img.freepik.com/free-photo/group-diverse-business-people_53876-20967.jpg?t=st=1734941996~exp=1734945596~hmac=4c7130ba4c8611b5a142b975d0f3fb77385648cb8dd8e0092300e66b507b94a2&w=1060);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+} */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* background: transparent; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: #343a40;
+    color: white;
+    /* width: 100vh; */
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+.table th,
+.table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.table td {
+    border-top: 1px solid #dee2e6;
+}
+.Addbttn,
+.viewbttn,
+.editbttn,
+.deletebttn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Addbttn {
+    background-color: #28a745;
+}
+
+.Addbttn:hover {
+    background-color: #218838;
+}
+
+.viewbttn {
+    background-color: #007bff;
+}
+
+.viewbttn:hover {
+    background-color: #0056b3;
+}
+
+.editbttn {
+    background-color: #ffc107;
+}
+
+.editbttn:hover {
+    background-color: #e0a800;
+}
+
+.deletebttn {
+    background-color: #dc3545;
+}
+
+.deletebttn:hover {
+    background-color: #c82333;
+}
+.contenttt {
+    /* max-width: 1200px; */
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.544);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sub {
+    margin-bottom: 20px;
+    width: 145vh;
+}
+
+.employee-list {
+    /* margin-top: 20px; */
+    width: 165vh;
+}
+.text-center {
+    color: #343a40;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.fs-2 {
+    font-size: 2rem;
+}
+
+.fs-4 {
+    font-size: 1.5rem;
+}
+.Addbttnnn{
+    background-color: #218838;
+    padding: 8px;
+    border: 2px solid  #218838;
+    border-radius: 15px;
+}
+.manback{
+    background-color: rgba(0, 0, 0, 0.877);
+    width: 40vh;
+    height: 180vh;
 }

@@ -1,0 +1,101 @@
+.resetbackground{
+    background-color:white;
+    height: 100vh;
+}
+.foo{
+    background-color: white;
+    width: 100%;
+    height: 85vh;
+    border-radius: 20px;
+}
+.top{
+    padding-top: 8em;
+}
+.purple{
+    width: 80vh;
+    height: 70vh;
+}
+.resetfont{
+    color: #CDCDFF;
+}
+.inputtt{
+    padding: 8px;
+    width: 60vh;
+    height: 8vh;
+    border: 2px solid #CDCDFF;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #CDCDFF;
+}
+.inputtt::placeholder{
+    color: #CDCDFF;
+}
+.resetbtn{
+    background-color: #CDCDFF;
+    width: 60vh;
+    height: 8vh;
+    border:2px solid #CDCDFF;
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+}
+.resetbtn:hover{
+    background-color: white;
+    border: 2px solid #CDCDFF;
+    color: #CDCDFF;
+}
+
+
+.resetcontainer {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width:150vh;
+
+}
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+.form-container {
+    flex: 1;
+    padding: 20px;
+}
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-container button:hover {
+    background-color: #ff4c4c;
+}
+/* .resetbackground{
+    background-image: url(https://files.oaiusercontent.com/file-5MzuSKby3eq1YVRmFRF73H?se=2024-12-29T10%3A33%3A02Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dce2d2a25-a70b-41db-a4b4-1f8122cdbd91.webp&sig=j4FCKnpbvrvd8V%2BfsmHnjE1638Glhv0M9WruHjK9xrc%3D);
+   
+} */

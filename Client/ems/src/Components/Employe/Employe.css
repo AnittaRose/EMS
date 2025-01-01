@@ -1,0 +1,101 @@
+.profille-card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 80vh;
+}
+.profille-card img {
+    border-radius: 10px;
+    width: 60%;
+    /* max-width: 200px; */
+    height: 70vh;
+}
+.profille-info {
+    flex: 1;
+    margin-left: 20px;
+}
+.profille-info h1 {
+    font-size: 24px;
+    margin: 0;
+}
+.profille-info h2 {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0;
+}
+.profille-info p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+.bio, .goals, .wants-needs {
+    margin-top: 20px;
+}
+.bio h3, .goals h3, .wants-needs h3 {
+    font-size: 16px;
+    color: #4a90e2;
+    margin: 0 0 10px 0;
+}
+.bio p, .goals ul, .wants-needs p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+.goals ul {
+    list-style: none;
+    padding: 0;
+}
+.goals ul li {
+    margin-bottom: 5px;
+}
+.quote {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #4a90e2;
+    display: flex;
+    align-items: center;
+}
+.quote i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+@media (max-width: 600px) {
+    .profile-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-info {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+/* .empback{
+    background-image: url(https://files.oaiusercontent.com/file-VHWsEH6sxMnk4b7t9NZzqH?se=2024-12-29T12%3A04%3A25Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D7fdda6e7-133f-4fb0-a29f-72929852d9e1.webp&sig=p%2BNlr5OEtEFYla5IloMN/AaS4bWpRJEQGTr5LyhioFc%3D);
+    width: 120vh;
+    height: 100vh;
+} */
+ .empback{
+    width: 100vh;
+ }
+ .table{
+    width: 100vh;
+ }
+ .black{
+    background-color: #D9DAC5;
+ }
+.hover-effect:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}

@@ -2,7 +2,7 @@
 const bcrypt = require('bcrypt');
 const Admin = require('../Models/Admin'); // Import the admin model
 const user_type= require('../Models/user_type'); // Import the usertype model
-const mongoose = require('mongoose'); // Ensure mongoose is required
+
 
 module.exports = {
   up: async (models, mongoose) => {
@@ -11,13 +11,13 @@ module.exports = {
       const hashedPassword = await bcrypt.hash('admin@123', 10);
       
       // Check if the usertype already exists
-      const existingUserType = await user_type.findOne({ _id: new mongoose.Types.ObjectId("67029a691240a5ff40dd0dfe") });
+      const existingUserType = await user_type.findOne({ _id: new mongoose.Types.ObjectId("6766e758203c503ae0b70ce3") });
 
       if (!existingUserType) {
         // Insert the usertype for admin if it doesn't exist
         await user_type.insertMany([
           {
-            _id: new mongoose.Types.ObjectId("67029a691240a5ff40dd0dfe"), // Create ObjectId for usertype
+            _id: new mongoose.Types.ObjectId("6766e758203c503ae0b70ce3"), // Create ObjectId for usertype
             user_type: 'Admin', // Define the usertype
           }
         ]);
@@ -34,7 +34,7 @@ module.exports = {
             name: 'Admin',
             email: 'admin@gmail.com',
             password: hashedPassword, // Store hashed password
-            user_type: "67029a691240a5ff40dd0dfe" // Reference the usertype _id directly
+            user_type: "6766e758203c503ae0b70ce3" // Reference the usertype _id directly
           }
         ]);
       }
@@ -54,7 +54,7 @@ module.exports = {
 
       // Delete the associated usertype by ID
       const userTypeRes = await user_type.deleteMany({
-        _id: new mongoose.Types.ObjectId("67029a691240a5ff40dd0dfe"),
+        _id: new mongoose.Types.ObjectId("6766e758203c503ae0b70ce3"),
       });
 
       console.log(`${adminRes.deletedCount} admin user(s) and ${userTypeRes.deletedCount} usertype(s) deleted successfully.`);

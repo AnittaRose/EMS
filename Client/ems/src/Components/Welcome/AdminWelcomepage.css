@@ -1,0 +1,40 @@
+/* Add this CSS to style the page with a background image */
+.welcome-container {
+    height: 100vh;
+    background-image: url('https://files.oaiusercontent.com/file-5PsQR8yxq8pJGzQYZdfxJC?se=2024-12-30T08%3A19%3A06Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D5c89ecd9-6b37-4498-94b1-cf4dacaae4f8.webp&sig=ItCZKjp9M9zcXoyL9IBTcQEVCwq/AVzmE33B4uPZOks%3D'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text visibility */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+.text-light {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}

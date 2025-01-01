@@ -34,7 +34,7 @@ function Login(){
       console.log(parsedResponse);
 
       let { user_type, token, id } = parsedResponse.data;
-      console.log(user_type);
+      console.log("usetype",user_type);
 
       let tokenKey = id;
       localStorage.setItem(tokenKey, token);
@@ -42,7 +42,7 @@ function Login(){
 
       let loginCountKey = `${id}_login_count`;
       let loginCount = parseInt(localStorage.getItem(loginCountKey) || 0);
-
+      
       if (loginCount === 0) {
         localStorage.setItem(loginCountKey, 1);
         alert("This is your first login. Please reset your password.");
@@ -53,12 +53,12 @@ function Login(){
         localStorage.setItem(loginCountKey, loginCount);
       }
 
-      // if (user_type === 'Admin') {
-      
-        navigate(`/Admin?login=${tokenKey}&id=${id}`);
-      // } else if (user_type === "Employee") {
+      if (user_type.user_type === 'Admin') {
+        navigate(`/WelcomeAdmin?login=${tokenKey}&id=${id}`);
+      } else if (user_type.user_type === "Employee") {
         // navigate(`/Employe?login=${tokenKey}&id=${id}`);
-      // }
+        navigate(`/WelcomeEmployee?login=${tokenKey}&id=${id}`);
+      }
 
     } catch (error) {
       console.error("Login failed:", error);
@@ -73,41 +73,14 @@ function Login(){
         <div className="login_container">
         <div className="login_form_container">
           <div className="login_form">
-            <form onSubmit={add} className="position-absolute top-50 start-50 translate-middle form122">
-              <h2 className="text-center pt-4">Login</h2>
-              <div className="input_group text-center pt-5">
-                <i className="fa fa-user" />
-                <input
-                  type="text"
-                  placeholder="Email"
-                  className="input_text"               
-                  id="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </div>
-              <div className="input_group text-center pt-5">
-                <i className="fa fa-unlock-alt" />
-                <input
-                  type="password"
-                  placeholder="Password"
-                  className="input_text"                  
-                  id="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-              </div>
-              <div className="text-center pt-5">
-                {/* <input type="submit" className="button_group " id="login_button" /> */}
-                <button className="button_group" id="login_button">Log in </button>
-              </div>
-              <div className="footer px-5 pt-4">
-                {/* <span className="forgot"  onClick={forgoten}>
-                  Forgot Password?
-                </span>
-                <a>SignUp</a> */}
-              </div>
+            <form className="form position-absolute top-50 start-50 translate-middle" onSubmit={add}>
+              <p className="heading">LOGIN</p>
+              <div className=""><input placeholder="Email" className="input" type="email"  id="email" value={email} onChange={(e) => setEmail(e.target.value)} /></div>
+              <div className=""><input placeholder="Password" className="input" type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} /></div>
+              <button className="btn" id="login_button">Submit</button>
             </form>
+
+
           </div>
         </div>
       </div>
@@ -116,3 +89,4 @@ function Login(){
 }
 
 export default Login;
+

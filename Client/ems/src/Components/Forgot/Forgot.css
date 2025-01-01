@@ -1,0 +1,89 @@
+.emailcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.illustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.illustration img {
+  max-width: 100%;
+  height: auto;
+}
+.illustration .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.illustration .overlay img {
+  width: 50px;
+  height: 50px;
+}
+.form-emailcontainer {
+  margin-left: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.form-emailcontainer img {
+  width: 50px;
+  height: 50px;
+}
+.form-emailcontainer h2 {
+  margin: 20px 0;
+  font-size: 24px;
+  color: #333;
+}
+.form-emailcontainer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-emailcontainer form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-emailcontainer form button {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.form-emailcontainer form button:hover {
+  background-color: #ff4b4b;
+}
+@media (max-width: 768px) {
+  .emailcontainer {
+      flex-direction: column;
+  }
+  .form-emailcontainer {
+      margin-left: 0;
+      margin-top: 20px;
+  }
+}
+.forgotimg{
+  background-color: black;
+  width: 214vh;
+  height: 100vh;
+}

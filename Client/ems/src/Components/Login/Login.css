@@ -1,5 +1,5 @@
 .login_container{
-    background-image: url(https://img.freepik.com/free-photo/team-teamwork-collaboration-corporate-concept_53876-15857.jpg?t=st=1734487391~exp=1734490991~hmac=8ee0cd9be8f8a2ed4125e02276538dd503430c05f5aa85137b931fdb98b89a70&w=740);
+    background-image: url(https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     background-size: cover;
     background-repeat: no-repeat;
     width: 214vh;
@@ -7,7 +7,77 @@
     background-position: center;
     /* backdrop-filter: blur(20px); */
 }
-.form122{
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 3em;
+  padding-left: 2.8em;
+  padding-right: 2.8em;
+  padding-bottom: 2.1em;
+  border: 2px dashed #DAA06D;
+  border-radius: 15px;
+  background-color: #EADDCA;
+  box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+  transition: .4s ease-in-out;
+  width: 80vh;
+  height: 70vh;
+}
+
+::placeholder {
+  color: #DAA06D;
+  text-align: center;
+}
+
+.form .heading {
+  padding-left: 0.8em;
+  color: #DAA06D;
+  background-color: transparent;
+  letter-spacing: .5em;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  text-shadow: inset -1px -1px 1px #DAA06D;
+}
+
+.form .input {
+  outline: none;
+  padding: 0.5em;
+  border: 1px solid #DAA06D;
+  color: #DAA06D;
+  width: 25em;
+  height: 3em;
+  border-radius: 10px;
+  background-color: #EADDCA;
+  text-align: center;
+}
+
+.form .btn {
+  align-self: center;
+  margin-top: 2em;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #E5AA70;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  transition: .4s ease-in-out opacity,.1s ease-in-out active;
+  padding: 1em;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+  width: 57vh;
+}
+
+.form .btn:hover {
+  opacity: 0.8;
+}
+
+.form .btn:active {
+  transform: translateX(0.1em) translateY(0.1em);
+  box-shadow: none;
+}
+/* .form122{
     background-color:rgb(198,238,248);
     width: 60vh;
     height: 60vh;
@@ -31,3 +101,84 @@
 .input_text:hover{
     background-color: rgb(198,238,248);
 }
+.employeeimg{
+    height: 100vh;
+    width: 100vh;
+}
+.containerr{
+    width: 90vh;
+}
+
+.form-control {
+    margin: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+    border-radius: 8px;
+  }
+  .title {
+    font-size: 28px;
+    font-weight: 800;
+  }
+  .input-field {
+    position: relative;
+    width: 100%;
+  }
+  
+  .input {
+    margin-top: 15px;
+    width: 100%;
+    outline: none;
+    border-radius: 8px;
+    height: 45px;
+    border: 1.5px solid #ecedec;
+    background: transparent;
+    padding-left: 10px;
+  }
+  .input:focus {
+    border: 1.5px solid #2d79f3;
+  }
+  .input-field .label {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    color: #ccc;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 2;
+  }
+  .input-field .input:focus ~ .label,
+  .input-field .input:valid ~ .label {
+    top: 5px;
+    left: 5px;
+    font-size: 12px;
+    color: #2d79f3;
+    background-color: #ffffff;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .submit-btn {
+    margin-top: 30px;
+    height: 55px;
+    background: #f2f2f2;
+    border-radius: 11px;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #363636 0%, #1b1b1b 50%, #000000 100%);
+    box-shadow: 0px 0px 0px 0px #ffffff, 0px 0px 0px 0px #000000;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    box-shadow: 0px 0px 0px 2px #ffffff, 0px 0px 0px 4px #0000003a;
+  }
+   */
